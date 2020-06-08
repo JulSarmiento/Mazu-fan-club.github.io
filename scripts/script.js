@@ -35,10 +35,13 @@ function handleClick() {
     } else {
         let name = window.prompt("Por favor ingrese su primer nombre: ");
         let lastName = window.prompt("Por favor ingrese su primer apellido: ");
-        
-        setNames(name, lastName);
+        if (name && lastName) {
+            
+            setNames(name, lastName);
 
-        changeContent(stepOne, stepTwo);
+            changeContent(stepOne, stepTwo);
+        }
+
     }
    
 }
